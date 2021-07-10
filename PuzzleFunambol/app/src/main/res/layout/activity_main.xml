@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/RelativeLayout01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="20dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <Button
+        android:id="@+id/selectIMG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Image"
+         />
+
+        <ImageView
+            android:id="@+id/PreviewImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/selectIMG" />
+
+        <GridView
+            android:id="@+id/GridImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/selectIMG"
+            android:numColumns="3"
+            android:paddingTop="20dp"
+            android:horizontalSpacing="3dp"
+            android:verticalSpacing="3dp"
+            android:gravity="center"
+            android:stretchMode="columnWidth" />
+
+
+    </RelativeLayout>
